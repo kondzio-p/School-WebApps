@@ -1,0 +1,6 @@
+{
+  "filmy": [
+    { "nazwa": "Incepcja", "rok": 2010, "obraz": "obraz1.jpg" },
+    { "nazwa": "Hulk", "rok": 1999, "obraz": "obraz2.jpg" }
+  ]
+}
