@@ -1,0 +1,21 @@
+[
+  {
+    "nazwa": "Lew",
+    "gatunek": "Panthera leo",
+    "kontynent": "Afryka",
+    "zdjecie": "lew.jpg"
+  },
+  {
+    "nazwa": "Panda",
+    "gatunek": "Ailuropoda melanoleuca",
+    "kontynent": "Azja",
+    "zdjecie": "panda.jpg"
+  },
+  {
+    "nazwa": "Wilk",
+    "gatunek": "Canis lupus",
+    "kontynent": "Europa",
+    "zdjecie": "wilk.jpg"
+  }
+]
+

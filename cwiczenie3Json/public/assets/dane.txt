@@ -1,0 +1,4 @@
+nazwa;gatunek;kontynent;zdjecie
+Lew;Panthera leo;Afryka;lew.jpg
+Panda;Ailuropoda melanoleuca;Azja;panda.jpg
+Wilk;Canis lupus;Europa;wilk.jpg

@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Atlas Zwierząt</h1>
+
+  <table class="table table-bordered table-hover">
+    <thead class="table-primary">
+      <tr>
+        <th>Nazwa</th>
+        <th>Gatunek</th>
+        <th>Kontynent</th>
+        <th>Obraz</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let zwierze of zwierzeta" (click)="wybierzZwierze(zwierze)" style="cursor: pointer;">
+        <td>{{ zwierze.nazwa }}</td>
+        <td>{{ zwierze.gatunek }}</td>
+        <td>{{ zwierze.kontynent }}</td>
+        <td><img [src]="wypisz(zwierze.zdjecie)" alt="" width="80" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="wybraneZwierze" class="card mt-4 border text-center w-100" style="width: 18rem;">
+    <div class="card-header bg-primary text-light ">{{wybraneZwierze.nazwa}}</div>
+    
+    <div class="card-body text-center">
+      <img class="img-fluid" style="width: 20%;" [src]="wypisz(wybraneZwierze.zdjecie)">
+      <p class="card-text"><strong>Gatunek:</strong> {{ wybraneZwierze.gatunek }}</p>
+      <p class="card-text"><strong>Kontynent:</strong> {{ wybraneZwierze.kontynent }}</p>
+
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
